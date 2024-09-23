@@ -20,8 +20,8 @@ function HomePage() {
       try {
         const response = await axios.get('/public-flights/flights', {
           headers: {
-            'app_id': process.env.REACT_APP_API_ID,  
-            'app_key': process.env.REACT_APP_API_KEY, 
+            'app_id': 'e4419061',  
+            'app_key': '9d9c09c6bae74ae6fa9c04ad2756bcd5', 
             'ResourceVersion': 'v4',
             'Accept': 'application/json'
           },
