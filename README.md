@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Airplane Booking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, uçuş rezervasyonları yapmanıza olanak tanıyan bir web uygulamasıdır. Hem ön yüz (React) hem de arka yüz (Node.js ve MongoDB) bileşenlerinden oluşur.
 
-## Available Scripts
+## Gereksinimler
 
-In the project directory, you can run:
+- Node.js (14 veya daha üstü) -> https://nodejs.org/en
 
-### `npm start`
+## Kurulum
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Proje Klonlama
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Projeyi klonlamak için aşağıdaki komutu kullanın:
 
-### `npm test`
+git clone https://github.com/mehmtalnn07/airplane-booking-app.git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Kütüphane Yüklemeleri
 
-### `npm run build`
+## npm install express
+Express, Node.js üzerinde web uygulamaları geliştirmek için kullanılan minimal ve esnek bir web framework'üdür. HTTP isteklerini yönetmek ve yönlendirmek için kullanılır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## npm install mongoose
+Mongoose, MongoDB veritabanı ile etkileşim kurmak için kullanılan bir ODM (Object Data Modeling) kütüphanesidir. Veritabanı modellerinizi oluşturmanıza ve MongoDB ile etkileşimde bulunmanıza yardımcı olur.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## npm install body-parser
+Body-parser, gelen isteklerin gövdesini çözümlemek için kullanılır. JSON formatındaki verileri almak için gereklidir.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## npm install cors
+CORS (Cross-Origin Resource Sharing), farklı alanlardan gelen isteklerin kontrol edilmesine olanak tanır. Frontend ve backend arasındaki iletişimi sağlamak için bu middleware kullanılır.
 
-### `npm run eject`
+## npm install react react-dom
+React, kullanıcı arayüzleri geliştirmek için kullanılan bir JavaScript kütüphanesidir. Component tabanlı bir yapıya sahiptir ve uygulamanızın ön yüzünü oluşturur.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## npm install axios
+Axios, HTTP istekleri yapmak için kullanılan bir kütüphanedir. Backend ile iletişim kurarak veri çekmek veya göndermek için kullanılır.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Projeyi Çalıştırma
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Bu projeyi çalıştırmak için aşağıdaki adımları izleyin:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **VSCode ile Projeyi Açın**
+   - Projeyi Visual Studio Code (VSCode) ile açın.
 
-## Learn More
+2. **Terminalden src Klasörüne Gitme**
+   - VSCode içindeki terminali açın ve `src` klasörüne gidin:
+     ```bash
+     cd src
+     ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Sunucuyu Başlatma**
+   - Sunucuyu başlatmak için terminalde aşağıdaki komutu çalıştırın:
+     ```bash
+     node server.js
+     ```
+   - Terminalde "MongoDB bağlantısı başarılı!" yazısını görmelisiniz. Bu, MongoDB veritabanına başarıyla bağlandığınız anlamına gelir.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Ön Yüzü Başlatma**
+   - Yeni bir terminal açın (VSCode'da sağ üst köşeden yeni terminal açabilirsiniz) ve aşağıdaki komutu çalıştırın:
+     ```bash
+     npm start
+     ```
+   - Artık projenizin çalışıyor olması gerekiyor!
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Anasayfa](projectImages/airplane1.png)
+![Uçuş Listesi](projectImages/airplane2.png)
+![Uçuş Listesi Tek Yön](projectImages/airplane3.png)
+![Uçuş Ekle](projectImages/airplane4.png)
+![Uçuşlarım Ekranı](projectImages/airplane5.png)
+![Veritabanı Veriler](projectImages/airplane6.png)

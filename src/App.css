@@ -1,38 +1,331 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+}
+h1 {
   text-align: center;
+  color: #444;
+  margin-bottom: 20px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.firstRow {
+  display: flex;
+    justify-content: space-between; /* Elemanlar arası boşluğu eşit dağıtır */
+    align-items: center;
+    margin-right: 280px;
+    margin-left: 280px;
+    margin-bottom: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.firstRowFirst{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.firstRowFirst p {
+  margin-left: 10px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.firstRowSecond{
+  display: flex;
+    justify-content: space-around; /* Elemanlar arası boşluğu eşit dağıtır */
+    align-items: center;
+}
+.firstRowSecond p {
+  margin-right: 20px;
+}
+.dealicon{
+  width: 40px;
+  height: 40px;
+}
+.button {
+  font-size: 20px;
+  font-weight: bolder;
+  color: white;
+  background-color: purple;
+  border-radius: 10px 0 10px 0; /* Sol üst ve sağ alt köşeler oval, diğerleri keskin */
+  margin-top: 30px;
+  width: 200px;
+  height: 80px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+}
+.container {
   display: flex;
   flex-direction: column;
+}
+.date-picker {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.date-picker label {
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+.date-picker input {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.dateRow{
+  display: flex;
+  justify-content:center;
+}
+
+.searchContentRow{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+.titleRow{
+  display: flex;
   align-items: center;
+  font-weight: bolder;
+}
+.flight-cards {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.flight-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%; 
+  margin: 0 auto; 
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: left;
+}
+@media (max-width: 768px) {
+  .flight-card {
+    width: 95%; 
+  }
+}.flight-card p {
+  display: flex;
+  align-items: center; /* Görsel ve metni dikey olarak ortalar */
+}
+.firstColumn{
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  background-color: white;
+  margin-left: 280px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.planeicon{
+  width: 50px;
+  height: 50px;
+}
+.cardColumn {
+  display: flex;
+  flex-direction: column; /* Dikey kolon yapısı */
+  justify-content: center; /* Kolonlardaki öğeleri ortalar */
+}
+.cardRow {
+  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  align-items: center;
+}
+.citiesName {
+  font-size: 15px;
+  font-weight: 900;
+}
+.departureColumn {
+  display: flex;
+  flex-direction: column; /* Dikey kolon yapısı */
+  margin-top: 40px;
+}
+.departureRow {
+  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  margin-bottom: 10px;
+}
+.departureicon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.flyTime{
+  font-size: 20px;
+}
+.airlineName{
+  margin-top: 10px;
+}
+.divider {
+  height: 2px; /* Divider yüksekliği */
+  width: 100px; /* Divider genişliği */
+  background-color: #ccc; /* Renk */
+  margin-left: 50px;
+}
+.planeColumn {
+  display: flex;
+  flex-direction: column; /* Dikey kolon yapısı */
+  margin-left: 100px;
+  align-items: center; /* Ögeleri ortalar */
+  margin-right: 50px;
+}
+.airplaneicon{
+  width: 20px;
+  height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.arrivalColumn{
+  display: flex;
+  flex-direction: column; /* Dikey kolon yapısı */
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.arrivalRow {
+  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  margin-bottom: 10px;
+}
+.arrivalicon{
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+.priceRow{
+  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  flex-direction: column;
+  margin-top: 10px;
+}
+.pricetext{
+  color: purple;
+}
+.traveltype{
+  color: black;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.inputRow{
+  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  align-items: center;
+}
+.clickable-text {
+  color: blue; /* Normalde mavi renk */
+  font-size: 18px;
+  text-decoration: none; /* Varsayılan olarak alt çizgi yok */
+  cursor: pointer; /* Üzerine gelindiğinde imleç el simgesi olur */
+  transition: color 0.3s ease; /* Renk geçişi daha yumuşak olur */
+}
+
+.clickable-text:hover {
+  color: darkblue; /* Üzerine gelindiğinde renk değişir */
+  text-decoration: underline; /* Üzerine gelindiğinde alt çizgi eklenir */
+}
+
+.button-group {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  
+}
+
+.buttonselected {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: purple;
+}
+
+.round-trip {
+  border-radius: 20px 0 0 20px; /* Sol kısmı oval, sağ kısmı düz */
+  border-right: 1px solid #ccc;
+}
+
+.one-way {
+  border-radius: 0 20px 20px 0; /* Sol kısmı düz, sağ kısmı oval */
+}
+
+.buttonselected.active {
+  background-color: purple;
   color: white;
+  font-weight: bolder;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonselected:not(.active) {
+  background-color: darkgrey;
+  color: purple;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputRow {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.location-input {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  position: relative;
+}
+
+.location-input input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+#departure {
+  padding-left: 40px; /* İkona yer açmak için sol padding ekliyoruz */
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: url('/public/departure.svg') no-repeat 10px center;
+  background-size: 20px 20px; /* İkon boyutu */
+}
+
+#arrival {
+  padding-left: 40px; /* İkona yer açmak için sol padding ekliyoruz */
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: url('/public/arrival.svg') no-repeat 10px center;
+  background-size: 20px 20px; /* İkon boyutu */
+}
+
+.location-input input {
+  width: 260px; /* Input genişliğini container genişliği kadar yapar */
+  padding: 10px; /* Daha geniş ve rahat bir input görünümü için padding ekler */
+  font-size: 16px; /* Yazı büyüklüğünü ayarlar */
+  box-sizing: border-box; /* Input alanının kenarları dahil tam genişlik kullanmasını sağlar */
+}
+
+.showFlights{
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.showflights {
+  background-color: purple;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border-radius: 20px;
+  font-weight: bolder;
+  font-size: 20px;
 }

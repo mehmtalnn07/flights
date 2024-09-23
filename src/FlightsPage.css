@@ -1,0 +1,134 @@
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    
+  }
+  
+  .card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .card {
+
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+    
+    
+    transition: transform 0.3s, box-shadow 0.3s; /* Transform ve gölge geçişi */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Hover efekti */
+    
+  }
+  
+  .flight-card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flight-times {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Koyu mavi ton */
+  }
+  
+  .details-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .airline-info {
+    flex: 1;
+  }
+  
+  .airline-name {
+    font-size: 18px;
+    color: #2980b9; /* Mavi ton */
+    transition: color 0.3s; /* Yazı rengi geçişi */
+  }
+  
+  .airline-name:hover {
+    color: #3498db; /* Hover'da daha açık mavi */
+  }
+  
+  .flight-details {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .non-stop {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #27ae60; /* Yeşil ton */
+  }
+  
+  .flight-duration {
+    flex: 1;
+  }
+  
+  .flight-airports {
+    flex: 1;
+    font-size: 14px;
+    color: #7f8c8d; /* Gri ton */
+  }
+  
+  .flight-price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .price-box {
+    border: 2px solid #e74c3c; /* Çerçeve rengi */
+    padding: 10px; /* İç boşluk */
+    border-radius: 5px; /* Kenar yuvarlama */
+    text-align: center; /* Metin ortalama */
+    background-color: #f9c2c2; /* Açık kırmızı arka plan */
+    transition: background-color 0.3s; /* Arka plan geçişi */
+  }
+  
+  .price-box:hover {
+    background-color: #f5a3a3; /* Hover'da daha koyu kırmızı */
+  }
+  
+  .price {
+    font-size: 20px; /* Fiyat boyutu */
+    font-weight: bold; /* Kalın yazı */
+    color: #e74c3c; /* Kırmızı ton */
+  }
+  
+  .economy {
+    font-size: 14px; /* Economy yazı boyutu */
+    color: #888; /* Economy yazı rengi */
+  }
+  
+  .filterrow{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    margin-left: 200px;
+  }
+  .filterButton{
+    margin-right: 30px;
+    width: 80px;
+    height: 30px;
+    font-weight: bolder;
+    border-radius: 10px;
+  }

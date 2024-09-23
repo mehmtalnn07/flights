@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.77 16.77" id="plane-airport">
+  <g>
+    <g>
+      <circle cx="8.38" cy="8.38" r="7.88" fill="#fff" stroke="#020101" stroke-miterlimit="10"></circle>
+      <path d="M12.44 7.55H5.88v-.06L4.51 6h-.7l.34 1 .17.49v.13l.23.64-.18.74v.11l-.5 1.48h.7l1.14-1.34h3l-1.59 3h1l2.6-3h1.83c.89 0 1.6-.39 1.6-.85s-.76-.85-1.71-.85Z"></path>
+      <path d="M10.76 7.57 8.15 4.55h-.98l1.6 3.02h1.99z"></path>
+    </g>
+  </g>
+</svg>
