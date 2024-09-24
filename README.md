@@ -1,6 +1,6 @@
 # Airplane Booking App
 
-Bu proje, uçuş rezervasyonları yapmanıza olanak tanıyan bir web uygulamasıdır. Hem ön yüz (React) hem de arka yüz (Node.js ve MongoDB) bileşenlerinden oluşur. Ancak kullanmış olduğum API'de arrival(varış noktası) bilgisi bulunmuyor. Bu yüzden bir çok uçuş için varış noktası için "varış bilgisi yok" yazmaktadır.
+Bu proje, uçuş rezervasyonları yapmanıza olanak tanıyan bir web uygulamasıdır. Hem ön yüz (React) hem de arka yüz (Node.js ve MongoDB) bileşenlerinden oluşur. Ancak kullanmış olduğum API'de arrival(varış noktası) bilgisi bulunmuyor. Bu yüzden bir çok uçuş için varış noktası için "varış bilgisi yok" yazmaktadır. Sayfanın en aşağısında uygulama görselleri mevcuttur. İki adet mobil uygulama görselleri de var.
 
 ## Gereksinimler
 
