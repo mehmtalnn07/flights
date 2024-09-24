@@ -12,26 +12,50 @@ Bu proje, uçuş rezervasyonları yapmanıza olanak tanıyan bir web uygulaması
 
 Projeyi klonlamak için aşağıdaki komutu kullanın:
 
-git clone https://github.com/mehmtalnn07/airplane-booking-app.git
+git clone https://github.com/mehmtalnn07/flights.git
 
 ### 2. Kütüphane Yüklemeleri
 
-## npm install express
+1.**npm install**
+   ```bash
+     npm install
+   ```
+
+
+2.**npm install express**
+```bash
+     npm install express
+```
 Express, Node.js üzerinde web uygulamaları geliştirmek için kullanılan minimal ve esnek bir web framework'üdür. HTTP isteklerini yönetmek ve yönlendirmek için kullanılır.
 
-## npm install mongoose
+3.**npm install mongoose**
+```bash
+   npm install mongoose
+```
 Mongoose, MongoDB veritabanı ile etkileşim kurmak için kullanılan bir ODM (Object Data Modeling) kütüphanesidir. Veritabanı modellerinizi oluşturmanıza ve MongoDB ile etkileşimde bulunmanıza yardımcı olur.
 
-## npm install body-parser
+4.**npm install body-parser**
+```bash
+     npm install body-parser
+```
 Body-parser, gelen isteklerin gövdesini çözümlemek için kullanılır. JSON formatındaki verileri almak için gereklidir.
 
-## npm install cors
+5.**npm install cors**
+```bash
+     npm install cors
+```
 CORS (Cross-Origin Resource Sharing), farklı alanlardan gelen isteklerin kontrol edilmesine olanak tanır. Frontend ve backend arasındaki iletişimi sağlamak için bu middleware kullanılır.
 
-## npm install react react-dom
+6.**npm install react react-dom**
+```bash
+     npm install react react-dom
+```
 React, kullanıcı arayüzleri geliştirmek için kullanılan bir JavaScript kütüphanesidir. Component tabanlı bir yapıya sahiptir ve uygulamanızın ön yüzünü oluşturur.
 
-## npm install axios
+7.**npm install axios**
+```bash
+     npm install axios
+```
 Axios, HTTP istekleri yapmak için kullanılan bir kütüphanedir. Backend ile iletişim kurarak veri çekmek veya göndermek için kullanılır.
 
 ## Projeyi Çalıştırma
