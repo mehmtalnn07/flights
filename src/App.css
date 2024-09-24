@@ -16,7 +16,7 @@ h1 {
 }
 .firstRow {
   display: flex;
-    justify-content: space-between; /* Elemanlar arası boşluğu eşit dağıtır */
+    justify-content: space-between;
     align-items: center;
     margin-right: 280px;
     margin-left: 280px;
@@ -34,7 +34,7 @@ h1 {
 }
 .firstRowSecond{
   display: flex;
-    justify-content: space-around; /* Elemanlar arası boşluğu eşit dağıtır */
+    justify-content: space-around;
     align-items: center;
 }
 .firstRowSecond p {
@@ -49,7 +49,7 @@ h1 {
   font-weight: bolder;
   color: white;
   background-color: purple;
-  border-radius: 10px 0 10px 0; /* Sol üst ve sağ alt köşeler oval, diğerleri keskin */
+  border-radius: 10px 0 10px 0;
   margin-top: 30px;
   width: 200px;
   height: 80px;
@@ -117,7 +117,7 @@ h1 {
   }
 }.flight-card p {
   display: flex;
-  align-items: center; /* Görsel ve metni dikey olarak ortalar */
+  align-items: center;
 }
 .firstColumn{
   display: flex;
@@ -134,11 +134,11 @@ h1 {
 }
 .cardColumn {
   display: flex;
-  flex-direction: column; /* Dikey kolon yapısı */
-  justify-content: center; /* Kolonlardaki öğeleri ortalar */
+  flex-direction: column;
+  justify-content: center;
 }
 .cardRow {
-  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  display: flex;
   align-items: center;
 }
 .citiesName {
@@ -147,11 +147,11 @@ h1 {
 }
 .departureColumn {
   display: flex;
-  flex-direction: column; /* Dikey kolon yapısı */
+  flex-direction: column;
   margin-top: 40px;
 }
 .departureRow {
-  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  display: flex;
   margin-bottom: 10px;
 }
 .departureicon {
@@ -166,16 +166,16 @@ h1 {
   margin-top: 10px;
 }
 .divider {
-  height: 2px; /* Divider yüksekliği */
-  width: 100px; /* Divider genişliği */
-  background-color: #ccc; /* Renk */
+  height: 2px;
+  width: 100px;
+  background-color: #ccc;
   margin-left: 50px;
 }
 .planeColumn {
   display: flex;
-  flex-direction: column; /* Dikey kolon yapısı */
+  flex-direction: column;
   margin-left: 100px;
-  align-items: center; /* Ögeleri ortalar */
+  align-items: center;
   margin-right: 50px;
 }
 .airplaneicon{
@@ -186,12 +186,12 @@ h1 {
 }
 .arrivalColumn{
   display: flex;
-  flex-direction: column; /* Dikey kolon yapısı */
+  flex-direction: column;
   margin-left: 100px;
   margin-top: 40px;
 }
 .arrivalRow {
-  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  display: flex;
   margin-bottom: 10px;
 }
 .arrivalicon{
@@ -200,7 +200,7 @@ h1 {
   margin-right: 15px;
 }
 .priceRow{
-  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -217,20 +217,20 @@ h1 {
   margin-top: 5px;
 }
 .inputRow{
-  display: flex; /* Flexbox kullanarak satırları oluşturuyoruz */
+  display: flex;
   align-items: center;
 }
 .clickable-text {
-  color: blue; /* Normalde mavi renk */
+  color: blue;
   font-size: 18px;
-  text-decoration: none; /* Varsayılan olarak alt çizgi yok */
-  cursor: pointer; /* Üzerine gelindiğinde imleç el simgesi olur */
-  transition: color 0.3s ease; /* Renk geçişi daha yumuşak olur */
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .clickable-text:hover {
-  color: darkblue; /* Üzerine gelindiğinde renk değişir */
-  text-decoration: underline; /* Üzerine gelindiğinde alt çizgi eklenir */
+  color: darkblue;
+  text-decoration: underline;
 }
 
 .button-group {
@@ -249,12 +249,12 @@ h1 {
 }
 
 .round-trip {
-  border-radius: 20px 0 0 20px; /* Sol kısmı oval, sağ kısmı düz */
+  border-radius: 20px 0 0 20px;
   border-right: 1px solid #ccc;
 }
 
 .one-way {
-  border-radius: 0 20px 20px 0; /* Sol kısmı düz, sağ kısmı oval */
+  border-radius: 0 20px 20px 0;
 }
 
 .buttonselected.active {
@@ -291,28 +291,28 @@ h1 {
 }
 
 #departure {
-  padding-left: 40px; /* İkona yer açmak için sol padding ekliyoruz */
+  padding-left: 40px;
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: url('/public/departure.svg') no-repeat 10px center;
-  background-size: 20px 20px; /* İkon boyutu */
+  background-size: 20px 20px;
 }
 
 #arrival {
-  padding-left: 40px; /* İkona yer açmak için sol padding ekliyoruz */
+  padding-left: 40px;
   height: 40px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background: url('/public/arrival.svg') no-repeat 10px center;
-  background-size: 20px 20px; /* İkon boyutu */
+  background-size: 20px 20px;
 }
 
 .location-input input {
-  width: 260px; /* Input genişliğini container genişliği kadar yapar */
-  padding: 10px; /* Daha geniş ve rahat bir input görünümü için padding ekler */
-  font-size: 16px; /* Yazı büyüklüğünü ayarlar */
-  box-sizing: border-box; /* Input alanının kenarları dahil tam genişlik kullanmasını sağlar */
+  width: 260px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 .showFlights{
